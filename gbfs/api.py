@@ -1,4 +1,4 @@
-import urllib
+import urllib.request
 import json
 
 GBFS_FILE = 'gbfs.json'
@@ -64,7 +64,7 @@ class Client(object):
     def _make_request(self, api_file):
         url = self._endpoint + api_file
         req = urllib.request.urlopen(url)
-        data = req.read()
+        data = req.read().decode("utf8")
         if data.strip() == '':
             raise UnimplementedFileError()
         return json.loads(data)
