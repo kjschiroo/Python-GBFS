@@ -29,3 +29,27 @@ Module interacting with endpoints implementing the [GBFS standard V1.0](https://
     #     "last_updated": 1462135264,
     #     "ttl": 60
     # }
+
+## GBFS.Client ##
+GBFS.Client(endpoint_url)
+
+### functions ###
+gbfs(self)
+
+system_information(self)
+
+station_status(self)
+
+station_information(self)
+
+free_bike_status(self)
+
+system_hours(self)
+
+system_calendar(self)
+
+system_regions(self)
+
+system_pricing_plans(self)
+
+system_alert
